@@ -3,7 +3,8 @@ let map;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: -15.7620871, lng: -47.9331125 },
-    zoom: 20,
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
   })
 
   var locations = [
@@ -13,8 +14,11 @@ function initMap() {
 
   const infoWindow = new google.maps.InfoWindow()
 
+  var directionsService = new google.maps.DirectionsService()
 
+  var directionsDispla = new google.maps.DirectionsRenderer()
 
+  
   locations.forEach(([position, title], i) => {
     const marker = new google.maps.Marker({
       position,
