@@ -92,7 +92,22 @@ function initMap() {
 
   var directionsService = new google.maps.DirectionsService()
 
-  var directionsDispla = new google.maps.DirectionsRenderer()
+  var directionsDisplay = new google.maps.DirectionsRenderer()
+
+  directionsDisplay.setMap(map)
+
+  function calcRoute() {
+    var request = {
+      origin: brasilia[0][0],
+      destination: brasilia[1][0],
+      travelMode: 'driving'
+    }
+  }
+
+  //https://maps.googleapis.com/maps/api/directions/json?
+  //origin=Boston,MA&destination=Concord,MA
+  //&waypoints=Charlestown,MA|via:Lexington,MA
+  //&key=YOUR_API_KEY
 
   let baseGenetica = { lat: -15.7619153, lng: -47.933133 }
   new google.maps.Marker({
@@ -102,6 +117,10 @@ function initMap() {
     label: { text: 'Base Genética', fontWeight: 'bold', fontSize: "12px" },
     optimized: false
   })
+
+  for (var i = 0; i < valueRoute.length; i++ ){
+    waypoints
+  }
 
 
   locations?.forEach(([position, nomeCliente], i) => {

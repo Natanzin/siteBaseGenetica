@@ -1,0 +1,284 @@
+{
+    "botijoes": [
+        {
+            "id": 1,
+            "nome": "TS-05",
+            "capacidade": 5,
+            "paraResfriar": 2,
+            "botSeco": 7
+        },
+        {
+            "id": 2,
+            "nome": "TS-10",
+            "capacidade": 10,
+            "paraResfriar": 3,
+            "botSeco": 13
+        },
+        {
+            "id": 3,
+            "nome": "VOLTA-10",
+            "capacidade": 10,
+            "paraResfriar": 3,
+            "botSeco": 13
+        },
+        {
+            "id": 4,
+            "nome": "A 300",
+            "capacidade": 16,
+            "paraResfriar": 4,
+            "botSeco": 23
+        },
+        {
+            "id": 5,
+            "nome": "SX-18",
+            "capacidade": 18,
+            "paraResfriar": 5,
+            "botSeco": 23
+        },
+        {
+            "id": 6,
+            "nome": "DT-18",
+            "capacidade": 18,
+            "paraResfriar": 5,
+            "botSeco": 23
+        },
+        {
+            "id": 7,
+            "nome": "LR-17",
+            "capacidade": 18,
+            "paraResfriar": 5,
+            "botSeco": 25
+        },
+        {
+            "id": 8,
+            "nome": "DS-18",
+            "capacidade": 18,
+            "paraResfriar": 5,
+            "botSeco": 25
+        },
+        {
+            "id": 9,
+            "nome": "XR-12",
+            "capacidade": 20,
+            "paraResfriar": 5,
+            "botSeco": 25
+        },
+        {
+            "id": 10,
+            "nome": "XR-08",
+            "capacidade": 20,
+            "paraResfriar": 5,
+            "botSeco": 25
+        },
+        {
+            "id": 11,
+            "nome": "XR-16 A",
+            "capacidade": 20,
+            "paraResfriar": 5,
+            "botSeco": 25
+        },
+        {
+            "id": 12,
+            "nome": "SC20",
+            "capacidade": 21,
+            "paraResfriar": 6,
+            "botSeco": 27
+        },
+        {
+            "id": 13,
+            "nome": "AL-20",
+            "capacidade": 21,
+            "paraResfriar": 6,
+            "botSeco": 27
+        },
+        {
+            "id": 14,
+            "nome": "LR-21",
+            "capacidade": 21,
+            "paraResfriar": 6,
+            "botSeco": 27
+        },
+        {
+            "id": 15,
+            "nome": "VOLTA-20",
+            "capacidade": 21,
+            "paraResfriar": 6,
+            "botSeco": 27
+        },
+        {
+            "id": 16,
+            "nome": "XR-16",
+            "capacidade": 29,
+            "paraResfriar": 8,
+            "botSeco": 37
+        },
+        {
+            "id": 17,
+            "nome": "XR-24",
+            "capacidade": 29,
+            "paraResfriar": 8,
+            "botSeco": 37
+        },
+        {
+            "id": 18,
+            "nome": "SPER-29",
+            "capacidade": 29,
+            "paraResfriar": 8,
+            "botSeco": 37
+        },
+        {
+            "id": 19,
+            "nome": "LD-21/12",
+            "capacidade": 29,
+            "paraResfriar": 8,
+            "botSeco": 37
+        },
+        {
+            "id": 20,
+            "nome": "LR-31",
+            "capacidade": 30,
+            "paraResfriar": 8,
+            "botSeco": 38
+        },
+        {
+            "id": 21,
+            "nome": "SPER-31",
+            "capacidade": 30,
+            "paraResfriar": 8,
+            "botSeco": 38
+        },
+        {
+            "id": 22,
+            "nome": "AL-29",
+            "capacidade": 31,
+            "paraResfriar": 8,
+            "botSeco": 39
+        },
+        {
+            "id": 23,
+            "nome": "AL-29",
+            "capacidade": 31,
+            "paraResfriar": 8,
+            "botSeco": 39
+        },
+        {
+            "id": 24,
+            "nome": "LR-30",
+            "capacidade": 31,
+            "paraResfriar": 8,
+            "botSeco": 40
+        },
+        {
+            "id": 25,
+            "nome": "SPER-30X",
+            "capacidade": 32,
+            "paraResfriar": 8,
+            "botSeco": 40
+        },
+        {
+            "id": 26,
+            "nome": "AL-30",
+            "capacidade": 33,
+            "paraResfriar": 9,
+            "botSeco": 42
+        },
+        {
+            "id": 27,
+            "nome": "XT-34",
+            "capacidade": 34,
+            "paraResfriar": 9,
+            "botSeco": 43
+        },
+        {
+            "id": 28,
+            "nome": "BT-30",
+            "capacidade": 34,
+            "paraResfriar": 9,
+            "botSeco": 43
+        },
+        {
+            "id": 29,
+            "nome": "AL-34",
+            "capacidade": 34,
+            "paraResfriar": 9,
+            "botSeco": 43
+        },
+        {
+            "id": 30,
+            "nome": "SX-34",
+            "capacidade": 34,
+            "paraResfriar": 9,
+            "botSeco": 43
+        },
+        {
+            "id": 31,
+            "nome": "SM-33",
+            "capacidade": 34,
+            "paraResfriar": 9,
+            "botSeco": 43
+        },
+        {
+            "id": 32,
+            "nome": "EM-32",
+            "capacidade": 34,
+            "paraResfriar": 9,
+            "botSeco": 43
+        },
+        {
+            "id": 33,
+            "nome": "VR-16",
+            "capacidade": 34,
+            "paraResfriar": 9,
+            "botSeco": 43
+        },
+        {
+            "id": 34,
+            "nome": "SX-35",
+            "capacidade": 35,
+            "paraResfriar": 9,
+            "botSeco": 44
+        },
+        {
+            "id": 35,
+            "nome": "DX-36A",
+            "capacidade": 36,
+            "paraResfriar": 9,
+            "botSeco": 45
+        },
+        {
+            "id": 36,
+            "nome": "AL39",
+            "capacidade": 41,
+            "paraResfriar": 11,
+            "botSeco": 52
+        },
+        {
+            "id": 37,
+            "nome": "AL40",
+            "capacidade": 42,
+            "paraResfriar": 11,
+            "botSeco": 53
+        },
+        {
+            "id": 38,
+            "nome": "A-1500",
+            "capacidade": 42,
+            "paraResfriar": 11,
+            "botSeco": 53
+        },
+        {
+            "id": 39,
+            "nome": "SX-44",
+            "capacidade": 43,
+            "paraResfriar": 11,
+            "botSeco": 53
+        },
+        {
+            "id": 40,
+            "nome": "SM-43",
+            "capacidade": 43,
+            "paraResfriar": 11,
+            "botSeco": 53
+        }
+    ]
+}
