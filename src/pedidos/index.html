@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../../bootstrap5/css/bootstrap.min.css" />
+    <!--Javascript-->
+    <script src="../../bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <title>Base Genética</title>
+</head>
+
+<body style="background-color: whitesmoke;">
+    <div style="margin: 15px 20px;">
+        <h1 class="text-center">Pedido CRV Lagoa</h1>
+        <form action="">
+            <div class="form-group">
+                <label for="">Vendedor</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Quem está fazendo o pedido?</option>
+                    <option value="Bruno Henrique">Bruno Henrique</option>
+                    <option value="Lucas Borges">Lucas Borges</option>
+                    <option value="Marco Aurélio">Marco Aurélio Nunes</option>
+                    <option value="Natan Farias">Natan Farias</option>
+                    <option value="Ricardo Bonato">Ricardo Bonato</option>
+                    <option value="Weslley Alves">Weslley Alves</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Parceiro</label>
+                <input class="form-control" type="text"
+                    placeholder="Venda possui Parceiro? se sim, digite o nome do parceiro." aria-label="parceiro?">
+            </div>
+            <hr>
+            <div class="form-group">
+                <p>Cliente possui cadastro no sistema da CRV Lagoa? </p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="cadastroCliente" id="sim" value="sim">
+                    <label class="form-check-label" for="inlineRadio1">Sim</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="cadastroCliente" id="nao" value="nao">
+                    <label class="form-check-label" for="inlineRadio2">Não</label>
+                </div>
+            </div>
+            <hr>
+            <h2 class="text-center">Dados do Cliente</h2>
+            <div class="form-group">
+                <label for="">Cliente</label>
+                <input class="form-control" type="text" placeholder="Nome do Cliente:" aria-label="cliente">
+            </div>
+            <div class="form-group">
+                <p>Tipo de Pessoa? </p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tipoPessoa" id="juridica" value="juridica">
+                    <label class="form-check-label" for="inlineRadio1">Jurídica</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tipoPessoa" id="fisica" value="fisica">
+                    <label class="form-check-label" for="inlineRadio2">Física</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">CNPJ</label>
+                <input class="form-control" type="text" placeholder="Insira o CNPJ:" aria-label="cnpj">
+            </div>
+            <div class="form-group">
+                <label for="">CPF</label>
+                <input class="form-control" type="text" placeholder="Insira o CPF:" aria-label="cpf">
+            </div>
+            <div class="form-group">
+                <label for="">IE</label>
+                <input class="form-control" type="text" placeholder="Insira a Inscrição Estadual:" aria-label="ie">
+            </div>
+            <div class="form-group">
+                <label for="">Data de Nascimento</label>
+                <input class="form-control" type="date" aria-label="dataNascimento">
+            </div>
+            <hr>
+            <h2 class="text-center">Endereço da Fazenda</h2>
+            <div class="form-group">
+                <label for="">CEP</label>
+                <input class="form-control" type="text" placeholder="Insira o CEP da fazenda:" aria-label="dep">
+            </div>
+            <button type="button" class="btn btn-primary">Validar</button>
+            <div class="form-group">
+                <label for="">Estado</label>
+                <input class="form-control" type="text" placeholder="Insira o estado da fazenda:" aria-label="estado">
+            </div>
+            <div class="form-group">
+                <label for="">Cidade</label>
+                <input class="form-control" type="text" placeholder="Insira a cidade da fazenda:" aria-label="cidade">
+            </div>
+            <div class="form-group">
+                <label for="">Bairro</label>
+                <input class="form-control" type="text" placeholder="Insira o bairro da fazenda:" aria-label="cidade">
+            </div>
+            <div class="form-group">
+                <label for="">Endereço</label>
+                <input class="form-control" type="text" placeholder="Insira o endereço da fazenda:" aria-label="cidade">
+            </div>
+            <div class="form-group">
+                <label for="">Complemento</label>
+                <input class="form-control" type="text" placeholder="Insira o complemento da fazenda:" aria-label="cidade">
+            </div>
+            <hr>
+            <h2 class="text-center">Endereço de cobrança</h2>
+            <div class="form-group">
+                <label for="">CEP</label>
+                <input class="form-control" type="text" placeholder="Insira o CEP de cobrança:" aria-label="dep">
+            </div>
+            <button type="button" class="btn btn-primary">Validar</button>
+            <div class="form-group">
+                <label for="">Estado</label>
+                <input class="form-control" type="text" placeholder="Insira o estado de cobrança:" aria-label="estado">
+            </div>
+            <div class="form-group">
+                <label for="">Cidade</label>
+                <input class="form-control" type="text" placeholder="Insira a cidade de cobrança:" aria-label="cidade">
+            </div>
+            <div class="form-group">
+                <label for="">Bairro</label>
+                <input class="form-control" type="text" placeholder="Insira o bairro de cobrança:" aria-label="cidade">
+            </div>
+            <div class="form-group">
+                <label for="">Endereço</label>
+                <input class="form-control" type="text" placeholder="Insira o endereço de cobrança:" aria-label="cidade">
+            </div>
+            <div class="form-group">
+                <label for="">Complemento</label>
+                <input class="form-control" type="text" placeholder="Insira o complemento de cobrança:" aria-label="cidade">
+            </div>
+            <hr>
+            <h2 class="text-center">Contato</h2>
+            <div class="form-group">
+                <label for="">Telefone</label>
+                <input class="form-control" type="text" placeholder="Insira o complemento de cobrança:" aria-label="cidade">
+            </div>
+            <div class="form-group">
+                <label for="">Celular</label>
+                <input class="form-control" type="text" placeholder="Insira o complemento de cobrança:" aria-label="cidade">
+            </div>
+            <div class="form-group">
+                <label for="">E-mail</label>
+                <input class="form-control" type="text" placeholder="Insira o complemento de cobrança:" aria-label="cidade">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

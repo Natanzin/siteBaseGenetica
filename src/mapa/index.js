@@ -118,11 +118,6 @@ function initMap() {
     optimized: false
   })
 
-  for (var i = 0; i < valueRoute.length; i++ ){
-    waypoints
-  }
-
-
   locations?.forEach(([position, nomeCliente], i) => {
     const marker = new google.maps.Marker({
       position,
