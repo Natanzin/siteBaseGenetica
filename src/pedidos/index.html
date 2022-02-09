@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="../../bootstrap5/css/bootstrap.min.css" />
     <!--Javascript-->
     <script src="../../bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <!--Importa o Jquery-->
+    <script type="text/javascript" src="../../jquery/jquery-3.6.0.min.js"></script>
+    <!--Importa o plugin mask do Jquery-->
+    <script type="text/javascript" src="../../jquery/jquery.mask.min.js"></script>
     <title>Base Genética</title>
 </head>
 
@@ -38,11 +42,11 @@
                 <p>Cliente possui cadastro no sistema da CRV Lagoa? </p>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="cadastroCliente" id="sim" value="sim">
-                    <label class="form-check-label" for="inlineRadio1">Sim</label>
+                    <label class="form-check-label" for="sim">Sim</label>
                 </div>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="cadastroCliente" id="nao" value="nao">
-                    <label class="form-check-label" for="inlineRadio2">Não</label>
+                    <label class="form-check-label" for="nao">Não</label>
                 </div>
             </div>
             <hr>
@@ -55,34 +59,34 @@
                 <p>Tipo de Pessoa? </p>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="tipoPessoa" id="juridica" value="juridica">
-                    <label class="form-check-label" for="inlineRadio1">Jurídica</label>
+                    <label class="form-check-label" for="juridica">Jurídica</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tipoPessoa" id="fisica" value="fisica">
-                    <label class="form-check-label" for="inlineRadio2">Física</label>
+                    <input class="form-check-input" checked type="radio" name="tipoPessoa" id="fisica" value="fisica">
+                    <label class="form-check-label" for="fisica">Física</label>
                 </div>
             </div>
             <div class="form-group">
                 <label for="">CNPJ</label>
-                <input class="form-control" type="text" placeholder="Insira o CNPJ:" aria-label="cnpj">
+                <input class="form-control" inputmode="numeric" type="text" placeholder="Insira o CNPJ:" aria-label="cnpj" name="cnpj" id="cnpj">
             </div>
             <div class="form-group">
                 <label for="">CPF</label>
-                <input class="form-control" type="text" placeholder="Insira o CPF:" aria-label="cpf">
+                <input class="form-control" inputmode="numeric" type="text" placeholder="Insira o CPF:" aria-label="cpf" name="cpf" id="cpf">
             </div>
             <div class="form-group">
                 <label for="">IE</label>
-                <input class="form-control" type="text" placeholder="Insira a Inscrição Estadual:" aria-label="ie">
+                <input class="form-control" inputmode="numeric" type="text" placeholder="Insira a Inscrição Estadual:" aria-label="ie">
             </div>
             <div class="form-group">
                 <label for="">Data de Nascimento</label>
-                <input class="form-control" type="date" aria-label="dataNascimento">
+                <input class="form-control" inputmode="numeric" type="date" aria-label="dataNascimento">
             </div>
             <hr>
             <h2 class="text-center">Endereço da Fazenda</h2>
             <div class="form-group">
                 <label for="">CEP</label>
-                <input class="form-control" type="text" placeholder="Insira o CEP da fazenda:" aria-label="dep">
+                <input class="form-control" inputmode="numeric" type="text" placeholder="Insira o CEP da fazenda:" aria-label="dep" name="cepFaz" id="cep">
             </div>
             <button type="button" class="btn btn-primary">Validar</button>
             <div class="form-group">
@@ -109,7 +113,7 @@
             <h2 class="text-center">Endereço de cobrança</h2>
             <div class="form-group">
                 <label for="">CEP</label>
-                <input class="form-control" type="text" placeholder="Insira o CEP de cobrança:" aria-label="dep">
+                <input class="form-control" inputmode="numeric" type="text" placeholder="Insira o CEP de cobrança:" aria-label="dep" name="cepCob" id="cep">
             </div>
             <button type="button" class="btn btn-primary">Validar</button>
             <div class="form-group">
@@ -136,18 +140,36 @@
             <h2 class="text-center">Contato</h2>
             <div class="form-group">
                 <label for="">Telefone</label>
-                <input class="form-control" type="text" placeholder="Insira o complemento de cobrança:" aria-label="cidade">
+                <input class="form-control" inputmode="numeric" type="text" placeholder="Insira o complemento de cobrança:" aria-label="cidade" name="fone" id="fone">
             </div>
             <div class="form-group">
                 <label for="">Celular</label>
-                <input class="form-control" type="text" placeholder="Insira o complemento de cobrança:" aria-label="cidade">
+                <input class="form-control" inputmode="numeric" type="text" placeholder="Insira o complemento de cobrança:" aria-label="cidade" name="cel" id="cel">
             </div>
             <div class="form-group">
                 <label for="">E-mail</label>
-                <input class="form-control" type="text" placeholder="Insira o complemento de cobrança:" aria-label="cidade">
+                <input class="form-control" type="email" placeholder="Insira o complemento de cobrança:" aria-label="cidade">
             </div>
         </form>
     </div>
+
+    <script type="text/javascript">
+
+        //Aplicando mascara CPF
+        $("#cpf").mask("000.000.000-00")
+        //Aplicando mascara CNPJ
+        $("#cnpj").mask("00.000.000/0000-00")
+        //Aplicando mascara telefone
+        $("#fone").mask("(00) 0000-0000")
+        //Aplicando mascara celular
+        $("#cel").mask("(00) 0 0000-0000")
+        //Aplicando mascara salário
+        $("#valor").mask("999.999.990,00", { reverse: true })
+        //Aplicando mascara CEP
+        $("#cep").mask("00.000-000")
+
+    </script>
+
 </body>
 
 </html>
